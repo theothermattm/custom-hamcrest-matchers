@@ -3,7 +3,7 @@ custom-hamcrest-matchers
 
 Some custom [Hamcrest](https://code.google.com/p/hamcrest/) matchers I find useful.
 
-# [IsEqualToWithNonNullExpectedResult](https://github.com/theothermattm/custom-hamcrest-matchers/blob/master/src/main/java/com/theothermattm/matchers/IsEqualToWithNonNullExpectedResult.java)
+## [IsEqualToWithNonNullExpectedResult](https://github.com/theothermattm/custom-hamcrest-matchers/blob/master/src/main/java/com/theothermattm/matchers/IsEqualToWithNonNullExpectedResult.java)
 
 Extension of the Hamcrest core [IsEqual](http://hamcrest.org/JavaHamcrest/javadoc/1.3/org/hamcrest/core/IsEqual.html) matcher that will check the expected argument to make
 sure that in addition to normal equality, that the expected result isn't
