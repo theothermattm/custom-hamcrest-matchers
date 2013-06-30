@@ -24,16 +24,15 @@ fixture creation method was inadvertently changed.
 
 This is perhaps best illustrated with an example:
 ```
-  	// given 
-		MyTestFixture fixture = MyTestFixtureCreator.createTestFixture();
+// given 
+MyTestFixture fixture = MyTestFixtureCreator.createTestFixture();
 	 
-		// when 
-		MyResult result = myObjectUnderTest.process(fixture);
+// when 
+MyResult result = myObjectUnderTest.process(fixture);
 	 
-		// then 
-     // this matcher will ensure that your test fixture creator class
-     // won't have inadvertently set your source property to null
-     // so that you get a false positive when null == null
-		assertThat(result.getTargetProperty(),
-			 isEqualToWithNonNullExpectedResult(fixture.getSourceProperty())));
+// then 
+// this matcher will ensure that your test fixture creator class
+// won't have inadvertently set your source property to null
+// so that you get a false positive when null == null
+assertThat(result.getTargetProperty(), isEqualToWithNonNullExpectedResult(fixture.getSourceProperty())));
 ```
